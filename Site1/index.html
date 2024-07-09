@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Divisão seletiva</title>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Biscoito ou Bolacha?</h2>
+        <img src="./Imagens/2.jpg" ant="meme">
+        <button onclick="parabens()" class="b1"><strong>Biscoito</strong></button>
+        <button class="b2" onclick="desvia(this)" onmouseover="desvia(this)"><strong>Bolacha</strong></button>
+    </div>
+
+    <script>
+        function desvia(b2) {
+        b2.style.position = 'absolute';
+        b2.style.bottom = geraPosicao(1, 100);
+        b2.style.left = geraPosicao(1, 100);
+        console.log('opa, desviei...');
+        }
+
+        function geraPosicao(min, max) {
+            return (Math.random() * (max - min) + min) + "%";
+        }
+
+        function parabens(){
+            alert("Ainda bem que você escolheu por livre e espontânea vontade :)")
+        }
+
+    </script>
+</body>
+
+</html>
