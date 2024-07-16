@@ -1,0 +1,7 @@
+body {
+    background: black;
+}
+h1 {
+    color: rgb(6, 250, 6);
+    text-shadow: 10px 5px 20px greenyellow;
+}
